@@ -2,6 +2,8 @@
 
 ### Install Dev
 
+[Install Docker](https://docs.docker.com/engine/installation/) then in your console run:
+
 ```
 docker run --rm -v $(pwd):/app composer/composer install
 docker-compose up
