@@ -19,6 +19,7 @@ class CreateOfferPicturesTable extends Migration
             $table->integer('sorting');
             $table->string('ext');
             $table->timestamps();
+
             $table->foreign('offer_id')
                   ->references('id')
                   ->on('offers')

@@ -23,6 +23,7 @@ class CreatePaymentsTable extends Migration
             $table->string('card_brand');
             $table->integer('last_four');
             $table->timestamps();
+
             $table->foreign('invoice_id')
                   ->references('id')
                   ->on('invoices')

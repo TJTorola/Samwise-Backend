@@ -18,7 +18,7 @@ class CreateItemsTable extends Migration
             $table->integer('offer_id')->unsigned();
             $table->string('name')->default("");
             $table->string('type');
-            $table->text('type_info');
+            $table->json('type_info');
             $table->boolean('public')->default(1);
             $table->float('x')->default(0);
             $table->float('y')->default(0);

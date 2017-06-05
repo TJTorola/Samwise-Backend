@@ -17,7 +17,7 @@ class CreateOffersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('type');
-            $table->text('type_info');
+            $table->json('type_info');
             $table->boolean('public')->default(1);
             $table->string('description', 2047)->default("");
             $table->text('long_description');
